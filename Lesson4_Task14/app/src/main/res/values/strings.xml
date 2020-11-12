@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Lesson4_Task14</string>
+    <string name="text_content">Changing color to green</string>
+    <dimen name="text_size">22pt</dimen>
+</resources>
