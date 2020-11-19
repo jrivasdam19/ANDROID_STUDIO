@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ShowingFormatedDate</string>
+    <string name="print_date">Print Date</string>
+</resources>
