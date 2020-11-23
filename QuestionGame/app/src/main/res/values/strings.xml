@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">QuestionGame</string>
+    <string name="first">1.- The earth is the fourth planet from the sun</string>
+    <string name="second">2.- The planet Venus has no moons</string>
+    <string name="third">3.- Jupiter is composed mostly of iron</string>
+    <string name="fourth">4.- The sun is a star of average size</string>
+    <string name="fifth">5.- A lunar eclipse occurs when the sun passes</string>
+    <string name="correct_toast">Correct!</string>
+    <string name="incorrect_toast">Wrong! Try again.</string>
+</resources>
