@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".ModifyText">
+
+    <EditText
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/margin_top"
+        android:id="@+id/editableText"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Space style="@style/espacio"
+        android:id="@+id/space1"
+        android:layout_below="@+id/editableText"/>
+
+    <SeekBar
+        android:id="@+id/sizeSeekBar"
+        android:layout_below="@+id/space1"
+        android:layout_width="match_parent"
+        android:max="100"
+        android:layout_height="wrap_content"/>
+
+    <Space style="@style/espacio"
+        android:id="@+id/space2"
+        android:layout_below="@+id/sizeSeekBar"
+        android:progress="50"
+        android:progressDrawable="@drawable/custom_seekbar"/>
+
+    <Button
+        android:id="@+id/changeTextButton"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/space2"
+        android:backgroundTint="@color/grey"
+        android:layout_centerInParent="true"
+        android:onClick="applyTextChanges"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:text="@string/change_text"
+        tools:ignore="OnClick" />
+
+</RelativeLayout>
