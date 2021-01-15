@@ -14,7 +14,7 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 public class KeyboardInputType extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-
+//hola
     Spinner mSpinner;
     EditText mEditText;
 
