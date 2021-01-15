@@ -3,11 +3,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".SecondExerciseLesson7">
+
+    <ImageButton
+        android:id="@+id/dog_barking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="emitBark"
+        android:src="@drawable/dog_bark" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="You're in the Second Exercise"/>
+        android:gravity="center"
+        android:text="Write down here!"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
 
+    <EditText
+        android:id="@+id/first_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Puff! The dog copied the text."
+        android:visibility="invisible"
+        android:textColor="@color/purple_700"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:id="@+id/invisible_text"/>
+
+    <EditText
+        android:id="@+id/second_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This checkbox is:"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:onClick="onCheckboxClicked"
+        android:id="@+id/checkbox_1"/>
 </LinearLayout>

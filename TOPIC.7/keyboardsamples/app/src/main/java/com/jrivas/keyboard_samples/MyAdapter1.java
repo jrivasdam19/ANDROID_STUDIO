@@ -35,8 +35,21 @@ public class MyAdapter1 extends RecyclerView.Adapter<MyAdapter1.MyViewHolder> {
         holder.mLinearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(mContext,SecondActivity.class);
-                intent.putExtra("data1",data1[position]);
+                Intent intent=null;
+                switch (position){
+                    case 0:
+                        intent=new Intent(mContext,SecondActivity.class);
+                        break;
+                    case 1:
+                        intent=new Intent(mContext,KeyboardInputType.class);
+                        break;
+                    case 2:
+                        intent=new Intent(mContext,AlertDialogs.class);
+                        break;
+                    case 3:
+                        intent=new Intent(mContext,DroidCafe.class);
+                        break;
+                }
                 mContext.startActivity(intent);
             }
         });

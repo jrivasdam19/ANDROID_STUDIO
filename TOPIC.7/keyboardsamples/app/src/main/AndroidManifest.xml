@@ -9,15 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Keyboardsamples">
-        <activity android:name=".ThirdExerciseLesson7"
-            android:parentActivityName=".SecondActivity"
-            android:label="Exercises 7 and 8."/>
-        <activity android:name=".SecondExerciseLesson7"
-            android:parentActivityName=".SecondActivity"
-            android:label="Exercises 4, 5 and 6."/>
-        <activity android:name=".FirstExerciseLesson7"
-            android:parentActivityName=".SecondActivity"
-            android:label="Exercises 1, 2 and 3."/>
+        <activity android:name=".DroidCafe"></activity>
+        <activity android:name=".AlertDialogs" />
+        <activity
+            android:name=".KeyboardInputType"
+            android:label="Task 1, 2 and 3."
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ThirdExerciseLesson7"
+            android:label="Exercises 7 and 8."
+            android:parentActivityName=".SecondActivity" />
+        <activity
+            android:name=".SecondExerciseLesson7"
+            android:label="Exercises 4, 5 and 6."
+            android:parentActivityName=".SecondActivity" />
+        <activity
+            android:name=".FirstExerciseLesson7"
+            android:label="Exercises 1, 2 and 3."
+            android:parentActivityName=".SecondActivity" />
         <activity
             android:name=".SecondActivity"
             android:label="Lesson 7 Menu"

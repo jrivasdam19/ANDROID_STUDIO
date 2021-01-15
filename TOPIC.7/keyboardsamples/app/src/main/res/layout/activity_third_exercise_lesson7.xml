@@ -3,11 +3,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+
     tools:context=".ThirdExerciseLesson7">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="You're in the Third Exercise"/>
+        android:gravity="center"
+        android:id="@+id/changing_text"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:text="I'm going to change my color"/>
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/radio_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="Blue"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radio_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="Red"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radio_green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="Green"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
 
 </LinearLayout>

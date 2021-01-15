@@ -1,16 +1,25 @@
 <resources>
     <string name="app_name">keyboard-samples</string>
+    <string name="box_checked">This checkbox is: checked</string>
+    <string name="box_unchecked">This checkbox is: unchecked</string>
     <string-array name="main_tasks">
         <item>Lesson 7.</item>
         <item>Task 1,2,3.</item>
         <item>Task 4,5.</item>
         <item>Task 6.</item>
-        <item>App Images</item>
     </string-array>
-
     <string-array name="lesson_7_tasks">
         <item>Exercises 1,2,3.</item>
         <item>Exercises 4,5,6.</item>
         <item>Exercises 7,8.</item>
+    </string-array>
+    <string-array name="options_spinner">
+        <item>Text</item>
+        <item>Number</item>
+        <item>Phone</item>
+        <item>Date</item>
+        <item>DateTime</item>
+        <item>Password</item>
+        <item>Email</item>
     </string-array>
 </resources>
