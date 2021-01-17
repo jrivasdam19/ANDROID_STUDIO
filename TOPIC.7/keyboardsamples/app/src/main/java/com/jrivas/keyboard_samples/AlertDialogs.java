@@ -4,12 +4,21 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 
+import android.app.DatePickerDialog;
+import android.app.TimePickerDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.util.TimeFormatException;
 import android.view.View;
+import android.widget.DatePicker;
+import android.widget.TimePicker;
+import android.widget.Toast;
 
-public class AlertDialogs extends AppCompatActivity {
+import java.text.DateFormat;
+import java.util.Calendar;
+
+public class AlertDialogs extends AppCompatActivity implements DatePickerDialog.OnDateSetListener, TimePickerDialog.OnTimeSetListener {
 
     Context mContext;
 
@@ -42,10 +51,31 @@ public class AlertDialogs extends AppCompatActivity {
     }
 
     public void setDate(View view){
+        DialogFragment datePicker = new DatePickerFragment();
+        datePicker.show(getSupportFragmentManager(), "Date Picker");
+    }
 
+    @Override
+    public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+        Calendar calendar=Calendar.getInstance();
+        calendar.set(Calendar.YEAR,year);
+        calendar.set(Calendar.MONTH,month);
+        calendar.set(Calendar.DAY_OF_MONTH,dayOfMonth);
+        String currentDate = DateFormat.getDateInstance(DateFormat.FULL).format(calendar.getTime());
+        Toast.makeText(mContext,currentDate,Toast.LENGTH_SHORT).show();
     }
 
     public void setTime(View view){
+        DialogFragment timePicker = new TimePickerFragment();
+        timePicker.show(getSupportFragmentManager(),"Time Picker");
+    }
 
+    @Override
+    public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+        Calendar calendar=Calendar.getInstance();
+        calendar.set(Calendar.HOUR,hourOfDay);
+        calendar.set(Calendar.MINUTE,minute);
+        String currentTime = DateFormat.getTimeInstance().format(calendar.getTime());
+        Toast.makeText(mContext,currentTime,Toast.LENGTH_SHORT).show();
     }
 }
