@@ -1,9 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".AlertDialogs">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:text="Tap to test the alert"
+        style="@style/regular_text"/>
+    <Button
+        android:text="Alert"
+        style="@style/regular_button"
+        android:id="@+id/alert_button"
+        android:onClick="showAlert"/>
+    <TextView
+        android:text="Tap to set a date"
+        style="@style/regular_text"/>
+    <Button
+        android:text="Date"
+        style="@style/regular_button"
+        android:id="@+id/date_button"
+        android:onClick="setDate"/>
+    <TextView
+        android:text="Tap to set a time"
+        style="@style/regular_text"/>
+    <Button
+        android:text="Alert"
+        style="@style/regular_button"
+        android:id="@+id/time_button"
+        android:onClick="setTime"/>
+
+</LinearLayout>
