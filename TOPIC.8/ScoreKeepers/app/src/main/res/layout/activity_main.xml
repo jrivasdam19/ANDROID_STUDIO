@@ -17,7 +17,7 @@
             android:layout_alignParentTop="true"
             android:layout_centerInParent="true"
             android:id="@+id/team_1_name"
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+            style="@style/TeamText" />
         <ImageButton
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
@@ -32,7 +32,7 @@
             android:id="@+id/counter_team_1"
             android:text="@string/team_1_score"
             android:layout_centerInParent="true"
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+            style="@style/ScoreText" />
         <ImageButton
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
@@ -54,7 +54,7 @@
             android:layout_alignParentTop="true"
             android:layout_centerInParent="true"
             android:id="@+id/team_2_name"
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+            style="@style/TeamText" />
         <ImageButton
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
@@ -69,7 +69,7 @@
             android:id="@+id/counter_team_2"
             android:text="@string/team_2_score"
             android:layout_centerInParent="true"
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+            style="@style/ScoreText" />
         <ImageButton
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
