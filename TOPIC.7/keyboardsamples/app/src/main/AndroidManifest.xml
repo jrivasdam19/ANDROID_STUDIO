@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.jrivas.keyboard_samples">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,8 +11,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Keyboardsamples">
-        <activity android:name=".DroidCafe"></activity>
-        <activity android:name=".AlertDialogs" />
+        <activity
+            android:name=".OrderActivity"
+            android:label="Order Activity"
+            android:parentActivityName=".DroidDesserts"/>
+        <activity
+            android:name=".DroidDesserts"
+            android:label="@string/title_activity_droid_desserts"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.Keyboardsamples.NoActionBar" />
+        <activity
+            android:name=".AlertDialogs"
+            android:label="Alert Dialogs"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".KeyboardInputType"
             android:label="Task 1, 2 and 3."
@@ -39,7 +52,5 @@
             </intent-filter>
         </activity>
     </application>
-
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
 
 </manifest>

@@ -16,7 +16,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:capitalize="sentences"
-            android:inputType="phone"
+            android:hint="Enter text here"
+            android:inputType="text"
             android:id="@+id/edit_text_1"/>
 
         <Spinner

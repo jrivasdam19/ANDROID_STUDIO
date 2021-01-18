@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 public class SecondActivity extends AppCompatActivity {
 
     RecyclerView mRecyclerView;
-    String menu[];
+    String[] menu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

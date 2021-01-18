@@ -11,6 +11,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.Calendar;
+
 public class MyAdapter1 extends RecyclerView.Adapter<MyAdapter1.MyViewHolder> {
 
     String[] data1;
@@ -47,7 +49,7 @@ public class MyAdapter1 extends RecyclerView.Adapter<MyAdapter1.MyViewHolder> {
                         intent=new Intent(mContext,AlertDialogs.class);
                         break;
                     case 3:
-                        intent=new Intent(mContext,DroidCafe.class);
+                        intent=new Intent(mContext,DroidDesserts.class);
                         break;
                 }
                 mContext.startActivity(intent);

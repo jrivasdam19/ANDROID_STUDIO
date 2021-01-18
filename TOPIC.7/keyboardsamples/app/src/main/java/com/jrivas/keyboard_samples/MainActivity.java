@@ -8,7 +8,7 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
     RecyclerView mRecyclerView;
-    String menu1[];
+    String[] menu1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:onClick="emitBark"
+        android:contentDescription="dog barking"
         android:src="@drawable/dog_bark" />
 
     <TextView
@@ -26,6 +27,7 @@
         android:id="@+id/first_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="Tip to introduce text"
         android:inputType="text"/>
 
     <TextView
@@ -43,6 +45,7 @@
         android:id="@+id/second_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="I'm the twin of the above EditText"
         android:inputType="text"/>
 
     <CheckBox
