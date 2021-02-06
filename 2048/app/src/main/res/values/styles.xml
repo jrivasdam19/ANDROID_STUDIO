@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="cell_style">
+        <item name="android:layout_height">@dimen/cell</item>
+        <item name="android:layout_width">@dimen/cell</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+    <style name="number_2"></style>
+    <style name="number_4"></style>
+    <style name="number_8"></style>
+    <style name="number_16"></style>
+    <style name="number_32"></style>
+    <style name="number_64"></style>
+    <style name="number_128"></style>
+    <style name="number_256"></style>
+    <style name="number_512"></style>
+    <style name="number_1024"></style>
+    <style name="number_2048"></style>
+</resources>

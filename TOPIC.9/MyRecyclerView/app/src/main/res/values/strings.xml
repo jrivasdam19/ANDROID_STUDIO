@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">MyRecyclerView</string>
+    <string-array name="words">
+        <item>Word 1</item>
+        <item>Word 2</item>
+        <item>Word 3</item>
+        <item>Word 4</item>
+        <item>Word 5</item>
+        <item>Word 6</item>
+        <item>Word 7</item>
+        <item>Word 8</item>
+        <item>Word 9</item>
+        <item>Word 10</item>
+        <item>Word 11</item>
+        <item>Word 12</item>
+        <item>Word 13</item>
+        <item>Word 14</item>
+        <item>Word 15</item>
+        <item>Word 16</item>
+        <item>Word 17</item>
+        <item>Word 18</item>
+        <item>Word 19</item>
+    </string-array>
+</resources>
