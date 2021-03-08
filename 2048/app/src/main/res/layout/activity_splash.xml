@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sea"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Splash">
+
+    <TextView
+        android:id="@+id/TextViewTopTitle"
+        style="@style/basic_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_title"
+        android:textSize="@dimen/big_text" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <TableLayout
+        android:id="@+id/TableLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp">
+
+            <ImageView
+                android:layout_width="@dimen/image"
+                android:layout_height="@dimen/image"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sakura" />
+
+            <ImageView
+                android:layout_width="@dimen/image"
+                android:layout_height="@dimen/image"
+                android:scaleType="fitCenter"
+                android:src="@drawable/japan" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:layout_width="@dimen/image"
+                android:layout_height="@dimen/image"
+                android:scaleType="fitCenter"
+                android:src="@drawable/spyral" />
+
+            <ImageView
+                android:layout_width="@dimen/image"
+                android:layout_height="@dimen/image"
+                android:scaleType="fitCenter"
+                android:src="@drawable/origami" />
+        </TableRow>
+    </TableLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/TextViewBottomTitle"
+        style="@style/basic_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sub_title"
+        android:textSize="@dimen/normal_text" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        style="@style/basic_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/copyright"
+        android:textSize="@dimen/small_text" />
+
+</LinearLayout>

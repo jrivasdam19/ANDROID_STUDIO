@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">My2048</string>
+    <string name="main_title">2048!</string>
+    <string name="sub_title">Let\&apos;s see how good are your skills</string>
+    <string name="copyright">© 2021 GAME FRIKI inc.</string>
+    <string name="game_over">Game Over</string>
+    <string-array name="main_menu">
+        <item>Play New Game</item>
+        <item>Manage Scores</item>
+    </string-array>
+    <string-array name="options">
+        <item>Date</item>
+        <item>User name</item>
+        <item>Score</item>
+    </string-array>
+    <string-array name="filter">
+        <item>&gt;</item>
+        <item>&lt;</item>
+        <item>=</item>
+    </string-array>
+</resources>
